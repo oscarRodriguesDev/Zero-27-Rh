@@ -3,6 +3,7 @@
 import { useState, FormEvent } from "react";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
+import ThemeToggle from "@/components/ThemeToggle";
 
 export default function NovoPost() {
   const router = useRouter();
@@ -126,6 +127,8 @@ export default function NovoPost() {
               Ver Site
             </Link>
           </nav>
+
+          <ThemeToggle />
 
           <form action="/api/auth/logout" method="POST" className="admin-logout-form">
             <button type="submit" className="admin-logout-btn">Sair</button>

@@ -3,6 +3,7 @@
 import { useState, FormEvent, useEffect } from "react";
 import { useRouter, useParams } from "next/navigation";
 import Link from "next/link";
+import ThemeToggle from "@/components/ThemeToggle";
 
 interface PostData {
   _id: string;
@@ -219,6 +220,8 @@ export default function EditarPost() {
               Ver Site
             </Link>
           </nav>
+
+          <ThemeToggle />
 
           <form
             action="/api/auth/logout"

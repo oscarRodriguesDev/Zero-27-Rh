@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { getSession } from "@/lib/auth";
 import { redirect } from "next/navigation";
+import ThemeToggle from "@/components/ThemeToggle";
 
 export default async function AdminDashboard() {
   const session = await getSession();
@@ -23,6 +24,8 @@ export default async function AdminDashboard() {
               Ver Site
             </Link>
           </nav>
+
+          <ThemeToggle />
 
           <form action="/api/auth/logout" method="POST" className="admin-logout-form">
             <button type="submit" className="admin-logout-btn">Sair</button>

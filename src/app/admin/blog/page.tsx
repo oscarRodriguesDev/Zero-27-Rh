@@ -4,6 +4,7 @@ import { getSession } from "@/lib/auth";
 import { getPosts } from "@/lib/cosmic";
 import SetupCosmic from "@/components/SetupCosmic";
 import AdminBlogTable from "@/components/AdminBlogTable";
+import ThemeToggle from "@/components/ThemeToggle";
 
 export const dynamic = "force-dynamic";
 
@@ -30,6 +31,8 @@ export default async function AdminBlogPage() {
               Ver Site
             </Link>
           </nav>
+
+          <ThemeToggle />
 
           <form action="/api/auth/logout" method="POST" className="admin-logout-form">
             <button type="submit" className="admin-logout-btn">Sair</button>
