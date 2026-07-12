@@ -1,6 +1,4 @@
-O problema é que o GitHub renderiza apenas **Markdown**. Misturar HTML (`<p>`, `<br>`) com Markdown, usar caracteres especiais em árvores e alguns emojis pode deixar a renderização inconsistente dependendo do tema e do cliente.
 
-Abaixo está uma versão organizada e totalmente compatível com o GitHub.
 
 ````markdown
 # Zero27RH
