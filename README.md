@@ -204,4 +204,4 @@ Projeto privado.
 Todos os direitos reservados.
 ````
 
-Essa versão segue o padrão dos repositórios mais profissionais do GitHub, com separadores (`---`), blocos de código bem formatados, tabelas consistentes e uma estrutura que renderiza corretamente em qualquer cliente compatível com Markdown.
+
